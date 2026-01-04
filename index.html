@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Library Management System</h1>
+
+  <form id="bookForm">
+    <input type="text" id="title" placeholder="Title" required>
+    <input type="text" id="author" placeholder="Author" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="number" id="year" placeholder="Year" required>
+    <input type="number" id="copies" placeholder="Copies" required>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <label for="filterCategory">Filter by Category:</label>
+  <select id="filterCategory">
+    <option value="All">All</option>
+    <option value="Programming">Programming</option>
+    <option value="Computer Science">Computer Science</option>
+    <option value="Fiction">Fiction</option>
+    <option value="Self Help">Self Help</option>
+    <option value="Data Science">Data Science</option>
+  </select>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th><th>Author</th><th>Category</th><th>Year</th><th>Copies</th>
+      </tr>
+    </thead>
+    <tbody id="bookTable"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
